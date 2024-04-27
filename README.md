@@ -30,5 +30,13 @@ A continuación se puede previsualizar como queda el diseño en este punto
 
 __main.py__
 
+Esta es una manera convencional de realizar las 4 operaciones con la distinción de crear los widgets con el metodo tk (4 radiobutton para operaciones elementales, 2 entradas de datos y boton de calculo), sin la necesidad de utilizar un import PATH como en el pygubu, en el mismo directorio se llaman las funciones que permiten efectuar las operaciones y el fondo del aplicativo (revise directorio)
+
+```
+from addition import add
+from subtraction import subtract
+from multiplication_division import multiply, divide
+```  
+Finalmente el usuario puede seleccionar la operación realizada (una vez ingresado los datos numéricos en caso contrario devuelve la excepción), el aplicativo y su diseño solo se puede ver cada vez que se depura y ejecuta el código asi que el resultado es 
 
 
