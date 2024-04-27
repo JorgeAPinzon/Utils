@@ -39,4 +39,9 @@ from multiplication_division import multiply, divide
 ```  
 Finalmente el usuario puede seleccionar la operación realizada (una vez ingresado los datos numéricos en caso contrario devuelve la excepción), el aplicativo y su diseño solo se puede ver cada vez que se depura y ejecuta el código asi que el resultado es 
 
+![simple_version_gui](https://github.com/JorgeAPinzon/Utils/assets/159712640/ce6970df-bf11-4340-9cec-c5b732737102)
+
+__personalizada_gui.py__
+
+Aqui la lógica del proyecto se obvia para priorizar el aspecto y mejorar la experiencia del usuario
 
