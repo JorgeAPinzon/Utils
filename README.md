@@ -9,7 +9,7 @@ En el siguiente directorio se puede encontrar un aplicativo sencillo, que basica
 
 Para la realización del proyecto se utilizaron las siguientes herramientas (pip install + paquete ó pip install + paquete == 'version')
 
-- Spyder IDE 5.4.2 (Python 3.11.2 32bits x86)
+- Spyder IDE 5.4.2 (Python 3.11.2 32bits x86), Linux
 - Tkinter
 - Pillow 9.4.0
 - Pip 24.0
@@ -59,6 +59,19 @@ __mainpygubu.py__
 
 Tal y como lo indica su nombre fue elaborada para llamar a __personalizada_gui.py__ asi que luego de importar los scripts necesarios tanto para efectuar las operaciones, usar la interfaz personalizada (Interfaz2.app) y asociarla a una variable. Se generó la función main donde se desarrolla el código para las operaciones elementales con su respectiva excepción.
 
-Como nota adicional a la organización, mantenimiento y extensión de funcionalidades al proyecto, se ha de destacar el simplismo que otorga este enfoque y uso de esta herramienta en mainpygubu.py. La interfaz y su funcionamiento general se puede ver a continuación 
+Como nota adicional a la organización, mantenimiento y extensión de funcionalidades al proyecto, se ha de destacar el simplismo que otorga este enfoque y uso de esta herramienta en mainpygubu.py. La interfaz y parte de su funcionamiento general se puede previsualizar a continuación
 
+![personalizadagui2](https://github.com/JorgeAPinzon/Utils/assets/159712640/62c49c6e-34a2-4f7a-afe4-1bdff22c37ec)
+
+Recuerde que algunos detalles pueden hacer que varie todas y cada una de las visualizaciones añadidas, la razón el sistema operativo, la versión de las librerías o inclusive el tema que tenga instalado en su ordenador o que halla preseleccionado en pygubu-designer
+
+__normabotondiseñoopc1.odg__
+
+Este archivo contiene las imágenes utilizadas para algunos de los elementos de la interfaz. Puede acomodarlos o rediseñarlos a su preferencia solo tenga en cuenta que:
+
+- Fue realizado en LIbreOfficeDraw para una versión de 32bits
+- Recuerde las dimensiones al momento de importar y exportar los elementos por separado, puesto que la perdida de la calidad es significativa de plataforma a plataforma
+- Una vez halla elegido el tamaño y ubicación del elemento, no es posible que en pygubu-designer actualice cambios asi modifique el archivo; luego la recomendación es elaborar una o varias copias y las sobreescriba con el explorador que ofrece el asistente (icono lupa << propiedades del objeto << apartado imagen). Por supuesto no saturar el directorio o renombrar incontables veces los archivos puede agilizar su diseño.
+
+-   
 
