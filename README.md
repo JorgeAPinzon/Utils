@@ -41,7 +41,12 @@ Finalmente el usuario puede seleccionar la operación realizada (una vez ingresa
 
 ![simple_version_gui](https://github.com/JorgeAPinzon/Utils/assets/159712640/ce6970df-bf11-4340-9cec-c5b732737102)
 
+
 __personalizada_gui.py__
 
-Aqui la lógica del proyecto se obvia para priorizar el aspecto y mejorar la experiencia del usuario
+Aqui la lógica del proyecto se obvia para priorizar el aspecto y mejorar la experiencia del usuario, para ello se utiliza nuevamente pygubu solo que con unas particularidades por ejemplo:
+
+1. Como al elaborar el diseño con los mismos elementos (widgets), si generamos el codigo desde la pestaña aplicación pero hemos definido un aspecto diferente para el boton,fondo o incluso radiobutton (imagensuma2.png, imagenresta.png, imagencalcular.png...); obtendremos errores como imágenes no encontradas o elementos tk no compatibles esto por supuesto cuando se depure y compile el código en el intérprete de su preferencia. Esto se soluciona seleccionando script de codigo en lugar de aplicación en la pestaña de generar código.
+2. Al generar y compilar el script de código (pygubu) hacia el intérprete deberá notar varias cosas entre ellas; que el código aunque más extenso incluye la ruta de las imágenes y por su puesto al ejecutar tanto en vista previa como en el IDE, el diseño es igual que en el asistente gráfico tk, adicionalmente ya no necesita inicializar los elementos si no más bien adquirir propiedades para su posterior uso, la organización se ve alterada pero se encuentra dentro de una función y una clase main lo que la hace relativamente sencilla de implementar  
+3.  
 
