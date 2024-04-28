@@ -49,6 +49,9 @@ Aqui la lógica del proyecto se obvia para priorizar el aspecto y mejorar la exp
 1. Como al elaborar el diseño con los mismos elementos (widgets), si generamos el codigo desde la pestaña aplicación pero hemos definido un aspecto diferente para el boton,fondo o incluso radiobutton (imagensuma2.png, imagenresta.png, imagencalcular.png...); obtendremos errores como imágenes no encontradas o elementos tk no compatibles esto por supuesto cuando se depure y compile el código en el intérprete de su preferencia. Esto se soluciona seleccionando script de codigo en lugar de aplicación en la pestaña de generar código.
 2. Al generar y compilar el script de código (pygubu) hacia el intérprete deberá notar varias cosas entre ellas; que el código aunque más extenso incluye la ruta de las imágenes y por su puesto al ejecutar tanto en vista previa como en el IDE, el diseño es igual que en el asistente gráfico tk, adicionalmente ya no necesita inicializar los elementos si no más bien adquirir propiedades para su posterior uso, la organización se ve alterada pero se encuentra dentro de una función y una clase main lo que la hace relativamente sencilla de implementar  
 3. Los elementos de la interfaz que fuesen cambiados y como es habitual en el lenguaje tienen que estar en el mismo directorio, por que si bien no esta la ruta completa referenciada en el código, esto es por una propiedad tk referenciada en pygubu en contraste a lo que se expreso con anterioridad con la herramienta Photoimage
+4. La personalización adicional, como el cambio de cursor de acuerdo al elemento donde este el puntero del mouse, efectos de sombra, tipo de letra para los valores ingresados por el usuario (entry 1, 2), espaciado entre elementos o incluso el mismo empaquetamiento y distribución de los widgets; se realizo dentro de pygubu-designer con el uso de grid
 
-Finalmente se crea un evento del botón presionado para que devuelva el valor definido dentro del asistente gráfico   
+Finalmente se crea un evento del botón presionado para que devuelva el valor definido dentro del asistente gráfico, dicho esto la interfaz resultante es:
+
+
 
