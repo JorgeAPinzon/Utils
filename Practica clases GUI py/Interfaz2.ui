@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.3">
+  <object class="tk.Toplevel" id="toplevel1">
+    <property name="geometry">480x480</property>
+    <property name="height">200</property>
+    <property name="width">200</property>
+    <child>
+      <object class="ttk.Frame" id="frame1">
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="row">0</property>
+        </layout>
+        <child>
+          <object class="ttk.Label" id="fondoimagen" named="True">
+            <property name="image">fondo.png</property>
+            <property name="relief">flat</property>
+            <property name="takefocus">false</property>
+            <property name="text" translatable="yes">label1</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">0</property>
+              <property name="sticky">n</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="caja" named="True">
+            <property name="font">{FreeMono} 12 {}</property>
+            <property name="textvariable">string:entry1</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="pady">75</property>
+              <property name="row">0</property>
+              <property name="sticky">n</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="cajaII" named="True">
+            <property name="font">{FreeMono} 12 {}</property>
+            <property name="textvariable">string:entry2</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="pady">125</property>
+              <property name="row">0</property>
+              <property name="sticky">n</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Radiobutton" id="radiobutton1">
+            <property name="cursor">dotbox</property>
+            <property name="image">imagensuma2.png</property>
+            <property name="text" translatable="yes">Suma</property>
+            <property name="value">add</property>
+            <property name="variable">string:var</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="pady">175</property>
+              <property name="row">0</property>
+              <property name="sticky">n</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Radiobutton" id="radiobutton2">
+            <property name="cursor">dotbox</property>
+            <property name="image">imagenresta.png</property>
+            <property name="text" translatable="yes">Resta</property>
+            <property name="value">subtract</property>
+            <property name="variable">string:var</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="pady">215</property>
+              <property name="row">0</property>
+              <property name="sticky">n</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Radiobutton" id="radiobutton3">
+            <property name="cursor">dotbox</property>
+            <property name="image">imagenmultiplicacion.png</property>
+            <property name="text" translatable="yes">Multiplicación</property>
+            <property name="value">multiply</property>
+            <property name="variable">string:var</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="pady">255</property>
+              <property name="row">0</property>
+              <property name="sticky">n</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Radiobutton" id="radiobutton4">
+            <property name="cursor">dotbox</property>
+            <property name="image">imagendivision.png</property>
+            <property name="text" translatable="yes">División</property>
+            <property name="value">divide</property>
+            <property name="variable">string:var</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="pady">295</property>
+              <property name="row">0</property>
+              <property name="sticky">n</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="calculate_button" named="True">
+            <property name="command" type="command" cbtype="simple">botonpresionado</property>
+            <property name="cursor">watch</property>
+            <property name="image">imagencalcular.png</property>
+            <property name="style">Toolbutton</property>
+            <property name="text" translatable="yes">Calcular</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="pady">345</property>
+              <property name="row">0</property>
+              <property name="sticky">n</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
