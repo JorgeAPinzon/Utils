@@ -27,7 +27,7 @@ class InterfazApp:
         self.mainwindow: tk.Toplevel = builder.get_object("toplevel1", master)
         
         # Cargar la imagen de fondo
-        self.background_image = tk.PhotoImage(file="/home/antiXLinux/Documentos/Sistemas de Control Enfoque /scripts y programas/Practica clases GUI py/fondo.png")  # Reemplaza esto con la ruta a tu imagen
+        self.background_image = tk.PhotoImage(file="/Mi directorio/Practica clases GUI py/fondo.png")  # Reemplaza esto con la ruta a tu imagen
         background_label = tk.Label(self.mainwindow, image=self.background_image)
         background_label.place(x=0, y=0, relwidth=1, relheight=1)
         
