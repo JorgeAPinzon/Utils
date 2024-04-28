@@ -51,7 +51,7 @@ var = tk.StringVar()
 var.set('add')
 
 # Carga la imagen usando PIL
-image = Image.open("/home/antiXLinux/Documentos/Sistemas de Control Enfoque /scripts y programas/Practica clases GUI py/fondo.png")
+image = Image.open("/mi directorio/Practica clases GUI py/fondo.png")
 background_image = ImageTk.PhotoImage(image)
 
 # Crea un canvas y añade la imagen de fondo
