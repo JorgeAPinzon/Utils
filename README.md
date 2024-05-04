@@ -134,8 +134,15 @@ As an additional note to the organization, maintenance and extension of function
 
 ![personalizadagui2](https://github.com/JorgeAPinzon/Utils/assets/159712640/62c49c6e-34a2-4f7a-afe4-1bdff22c37ec)
 
-Remember that some details can cause each and every one of the added visualizations to vary, the reason being the operating system, the version of the libraries or even the theme that you have installed on you computer or that you have preselected in pyguby-deginer (or changed in the menu or tab according to version)
+Remember that some details can cause each and every one of the added visualizations to vary, the reason being the operating system, the version of the libraries or even the theme that you have installed on you computer or that you have preselected in pyguby-deginer (or changed in the menu or tab, according to version)
 
+__normabotondiseñoopc1.odg__
+
+This file contains the images used for some of the interface elements. Your can accommodate or redesign them to your preference, just keep in mind that: 
+
+- It was made in LibreOfficeDraw for a 32-bit version
+- Remember the dimmensions when importing and exporting the elements separately, since the loss of qualite is significant from platform to platform 
+- Once you have chosen the size and location of the element, it is not possible for pyguby-designer to update changes or modify the file; Then the reccommendation is to make one or more copies and overwrite them with the explorer offered by the wizard (magnifyng glass icon << object properties << image section). Of course, not cluttering the directory or renaming the files countless times can speed up your design
 
 
 
