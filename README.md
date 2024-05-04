@@ -113,6 +113,18 @@ Finally, the user can select the operation performed (numerical data has already
 
 ![simple_version_gui](https://github.com/JorgeAPinzon/Utils/assets/159712640/ce6970df-bf11-4340-9cec-c5b732737102)
 
+__personalizada_gui.py__
+
+Aqui la lógica del proyecto se obvia para priorizar el aspecto y mejorar la experiencia del usuario, para ello se utiliza nuevamente pygubu solo que con unas particularidades por ejemplo:
+
+1. When developing the designe with the same elements (widgets), if we generate the code from the application tab but we have defined a different appearance for the button, background or even radiobutton (imagensuma2.png, imagenresta.png, imagencalcular.png...); We will get error such as images not forund or unsupported tk elements, this of course when the code is debugged and compiled in the interpreter of your choice. This is solved by selecting code script instead of application in the generate code tab.
+2. When generating and compiling the code script (pygubu) towads the interpreter you should notice serveral things among them; The code, although more extensive, includes the path of the images and of course when running both in preview and in the IDE, the design is the same as int the tk graphic assistant, additionally you no longer need to initialize the elements, but rather acquire properties for the later use, the organization is altered but it is found within a function and a main class which makes it relatively simple to implement
+3. Interface elements that were changed and as is usual in the language have to be in the same directory, because although the full path is not referenced in the code, this is due to a tk property referenced in pygubu, in contrast to waht was expressed previously with the Photoimage tool
+4. Additional customization, such as changing the cursor according to the element where the mouse pointer is, shadow effects, font for user entered values (entry 1,2), spacing between elements or even the same packaging and widget distribution; it was done within pyguby-designer and grid distribution
+
+Finally, a button pressed event is created to return the value defined within the wizard. That said, the resulting interface is:
+
+![personalizadagui](https://github.com/JorgeAPinzon/Utils/assets/159712640/75de72e3-3ad9-40a4-ba80-bfe933b990e2)
 
 
 
