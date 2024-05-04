@@ -73,4 +73,31 @@ Este archivo contiene las imágenes utilizadas para algunos de los elementos de 
 - Recuerde las dimensiones al momento de importar y exportar los elementos por separado, puesto que la perdida de la calidad es significativa de plataforma a plataforma
 - Una vez halla elegido el tamaño y ubicación del elemento, no es posible que en pygubu-designer actualice cambios asi modifique el archivo; luego la recomendación es elaborar una o varias copias y las sobreescriba con el explorador que ofrece el asistente (icono lupa << propiedades del objeto << apartado imagen). Por supuesto no saturar el directorio o renombrar incontables veces los archivos puede agilizar su diseño.
 
+## English Version ##
+
+In the following directory you can find a simple application, which basically consist of carrying out the 4 elementary operations (+, -, *, /), by entering two data by the user (float type), also activating the calculate button and carrying out the select operation (Radiobutton) 
+
+To carry out the project, the following tools were used (pip install + package or pip install + package == 'version')
+
+- Spyder IDE 5.4.2 (Python 3.11.2 32bit x86), Linux
+- Tkinter
+-Pillow 9.4.0
+- Pip 24.0
+- Pygubu 0.34 and Pygubu-designer 0.38)
+
+__gui.py__  (mainpygubu.py backup)
+
+In this script a GUI is made with the four basic operations using pygubu (graphi assistant for GUI based on Tk), placing 4 radiobuttons and a calculate button; then generated the design and sabed the file __'interfaz.ui'__(code and generated from the application taba called PATH) and initialized the elements and their respective values to work labels and names inside or outside the code. Its possible for the user to enter the values and select the operation they want to perform and carry it out with the help of the messagebox
+
+A background is included using Photoimage, check the download directory..., finally to corroborate the execution of the design made in pygubu (f5 command), the values of radiobutton "var"(builder) were  called so that when carrying out an event of the button (press), print the assigned value via console. Note radiobutton1 or sum element was selected by default
+
+```
+__self.radiobutton1.invoke()__  
+```
+Below you can preview how the design looks at this point.
+
+![simple_version_gui_pygubu](https://github.com/JorgeAPinzon/Utils/assets/159712640/80284745-f40d-4fc3-862c-6825be65fb4d)
+
+
+
 
