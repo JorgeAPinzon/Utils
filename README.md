@@ -73,6 +73,8 @@ Este archivo contiene las imágenes utilizadas para algunos de los elementos de 
 - Recuerde las dimensiones al momento de importar y exportar los elementos por separado, puesto que la perdida de la calidad es significativa de plataforma a plataforma
 - Una vez halla elegido el tamaño y ubicación del elemento, no es posible que en pygubu-designer actualice cambios asi modifique el archivo; luego la recomendación es elaborar una o varias copias y las sobreescriba con el explorador que ofrece el asistente (icono lupa << propiedades del objeto << apartado imagen). Por supuesto no saturar el directorio o renombrar incontables veces los archivos puede agilizar su diseño.
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ## English Version ##
 
 In the following directory you can find a simple application, which basically consist of carrying out the 4 elementary operations (+, -, *, /), by entering two data by the user (float type), also activating the calculate button and carrying out the select operation (Radiobutton) 
@@ -97,6 +99,20 @@ __self.radiobutton1.invoke()__
 Below you can preview how the design looks at this point.
 
 ![simple_version_gui_pygubu](https://github.com/JorgeAPinzon/Utils/assets/159712640/80284745-f40d-4fc3-862c-6825be65fb4d)
+
+__main.py__
+
+This is a conventional way to perform the 4 operations with the distinction of creating the widgets with the tk method (4 radiobuttons for elementary operations, 2 data entries and a calculation button), without the need to use an import PATH as in pygubu, in the same directory the functions are called, which allow carrying outy the operations and the background of the application (check the directory)
+
+```
+from addition import add
+from subtraction import subtract
+from multiplication_division import multiply, divide
+```
+Finally, the user can select the operation performed (numerical data has already been entered, otherwise the excepetion is returned), the application and its design can only be seen each time the is debugged and executed, so the result is 
+
+![simple_version_gui](https://github.com/JorgeAPinzon/Utils/assets/159712640/ce6970df-bf11-4340-9cec-c5b732737102)
+
 
 
 
