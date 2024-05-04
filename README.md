@@ -126,6 +126,16 @@ Finally, a button pressed event is created to return the value defined within th
 
 ![personalizadagui](https://github.com/JorgeAPinzon/Utils/assets/159712640/75de72e3-3ad9-40a4-ba80-bfe933b990e2)
 
+__mainpygubu.py__
+
+As its name indicates, it was created to call __personalizada_gui.py__ so after importing the necessary scripts to carry out the operations, use the personalized interface (interfaz2.app) and associae it with a variable. Main function was generated whre the code for the elementary operations with their respective exception is developed.
+
+As an additional note to the organization, maintenance and extension of functionalities to the project, the simplicity provided by this approach and use of this tool in mainpygubu.py must be highlighted. The interface and part of its general operation can be previewed below
+
+![personalizadagui2](https://github.com/JorgeAPinzon/Utils/assets/159712640/62c49c6e-34a2-4f7a-afe4-1bdff22c37ec)
+
+Remember that some details can cause each and every one of the added visualizations to vary, the reason being the operating system, the version of the libraries or even the theme that you have installed on you computer or that you have preselected in pyguby-deginer (or changed in the menu or tab according to version)
+
 
 
 
