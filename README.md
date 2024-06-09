@@ -1,7 +1,7 @@
 # Utils
 
 
-Herramientas y funcionalidades de apoyo a proyectos, referencia para cada directorio el siguiente readme es una muestra del contenido por directorio
+Herramientas y funcionalidades de apoyo a proyectos, la siguiente es una referencia para cada directorio (readme.md por proyecto) 
 
 ## Practica clases GUI py ##
 
