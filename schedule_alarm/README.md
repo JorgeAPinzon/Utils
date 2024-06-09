@@ -51,6 +51,7 @@ def setup_ttk_styles(master=None):
                     background="#aca6a3", 
                     foreground="black")
 ```
+Para crear el script utilice el menu de preferencias ubicado en editar, luego dirijase a la pestaña que dice Estilos ttk y oprima crear. Como recomendación utilice el mismo directorio que tiene la aplicación ya que esto le permite organizar estilos para cada proyecto que tenga y evitara errores de compilación y/o ejecución. Asi mismo podra buscar el estilo ttk manualmente, escribir el directorio segun sea el caso o borrar.
 
 Notese que para trabajar con la herramienta es necesario cargarla e incluirla en el generate code (generar) cada vez que se utiliza el aplicativo puesto que aparecera como elemento tanto de la clase como de import  
 
