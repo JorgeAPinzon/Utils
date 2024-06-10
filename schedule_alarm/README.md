@@ -75,5 +75,28 @@ Este es el script principal donde se ejecutan todas las tareas descritas anterio
 - Entry1: Entrada de la hora de apagado en formato 24H, es utilizada la herramienta split para poder preguntar inclusive si el día de apagado corresponde a fecha actual; asi es posible evitar asignar horas ya transcurridas
 - Text1: Es el área de notificaciones entonces muestra los eventos relevantes ingresados. Por la funcionalidad del widget es posible ingresar texto una vez complilada y ejecutada la herramienta, aunque esto particularmente no tenga ninguna funcionalidad asignada, salvo la que determinen los usuarios.
 
-Por último se encuentran las funciones referenciadas a los widgets y el main loop que permite llamar a la clase principial InterfazRelojOffApp 
+Por último se encuentran las funciones referenciadas a los widgets y el main loop que permite llamar a la clase principial __InterfazRelojOffApp__ 
 
+- Función actualizar_reloj(self):
+
+Propósito: Mostrar la hora y fecha actuales para facilitar la programación de apagado   
+Uso: Establece la hora y fecha actual, en conjunto con el evento reloj cierra el aplicativo 
+
+- Función run(self)
+
+Proposito y uso: bucle de ejecución de la ventana principal
+
+- Función botonpress(self):
+
+Propósito: Desplegar o ocultar los elementos para programar el apagado del aplicativo   
+Uso: Presionar el botón Off para desplegar la interfaz de programación del apagado y limpiar el área de notificaciones cada n veces
+
+- Función botonprogram(self):
+
+Propósito: Programar alarmas y notificaciones en la interfaz gráfica   
+Uso: Seleccionar la fecha y hora deseada para que al presionar el botón y por supuesto respetando la lógica desarrollada, se cierre el aplicativo de forma autónoma   
+
+- Función focus_entry(self, event):
+
+Propósito: Realizar seguimiento al focus del usuario en el widget y limpiar la entrada una vez realizado el evento  
+Uso: Referenciar al usuario la manera en que debe ingresar la hora por ejemplo 14:17 (2:17 PM)
