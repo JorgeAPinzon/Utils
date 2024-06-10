@@ -51,7 +51,14 @@ def setup_ttk_styles(master=None):
                     background="#aca6a3", 
                     foreground="black")
 ```
+
 Para crear el script utilice el menu de preferencias ubicado en editar, luego dirijase a la pestaña que dice Estilos ttk y oprima crear. Como recomendación utilice el mismo directorio que tiene la aplicación ya que esto le permite organizar estilos para cada proyecto que tenga y evitara errores de compilación y/o ejecución. Asi mismo podra buscar el estilo ttk manualmente, escribir el directorio segun sea el caso o borrar.
 
-Notese que para trabajar con la herramienta es necesario cargarla e incluirla en el generate code (generar) cada vez que se utiliza el aplicativo puesto que aparecera como elemento tanto de la clase como de import  
+![pygubu](https://github.com/JorgeAPinzon/Utils/assets/159712640/a6e2ca23-8d8f-495e-9434-f3ddd807c262)
+
+
+Notese que para trabajar con la herramienta es necesario cargarla e incluirla en el generate code (generar), cada vez que se utiliza el aplicativo puesto que aparecera como elemento tanto de la clase como de import, para mas documentación sobre su uso utilice los recursos de los desarrolladores; gráficamente lo seleccionaria desde el panel de propiedades (siempre y cuando el widget lo permita, parte derecha de la pantalla)   
+
+![pygubu_generate_panel](https://github.com/JorgeAPinzon/Utils/assets/159712640/f863bfea-a39a-4c4d-ab74-2260c34bb7fb)
+
 
