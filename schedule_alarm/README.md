@@ -68,4 +68,12 @@ __reloj_off_gui.py__
 Este es el script principal donde se ejecutan todas las tareas descritas anteriormente, su organización es bastante sencilla, en primera instancia se define la clase y se desarrolla la ui desde el estilo definido por el usuario independientemente de la cantidad de widgets a los que les halla asignado la definición, después esta el apartado de widgets donde se encuentran: 
 
 - Label1: Es donde esta alojado el fondo de pantalla de la gui y como se ha determinado en anteriores proyectos, esta en el directorio raiz con el nombre __fondo_reloj_grafica.png__, fue asignado desde el panel de propiedades ("image" justo debajo de foreground)
+- Label2: Este widget tiene la labor de mostrar la hora actual en formato 12H, ahora bien en el código otras operaciones son realizadas en formato militar (24H a partir de 00:00), no obstante esto no le quita comodidad o funcionalidad para programar la hora deseada
+- Label3: Muestra la fecha actual, esto sera clave cuando programe el apagado
+- Button1: Es el boton off, despliega u oculta los elementos para programar el "apagado" del aplicativo y captura la fecha seleccionada por el usuario para saber si corresponde a una entrada valida. Cada cierto accionar del boton se limpia el area de notificaciones (8 veces por global contador1)
+- Button2: Programar es el widget que involucra varios de los elementos definidos para el aplicativo, ya que corrobora la hora y formato en entry1, la fecha y su conversión en calendar1, esto por supuesto para evitar que se haga antes de la fecha actual para finalmente desplegar los eventos relevantes en el area de notificaciones designada (text1)
+- Entry1: Entrada de la hora de apagado en formato 24H, es utilizada la herramienta split para poder preguntar inclusive si el dia de apagado corresponde a fecha actual; asi es posible evitar asignar horas ya transcurridas
+- Text1: Es el area de notificaciones entonces muestra los eventos relevantes ingresados. Por la funcionalidad del widget es posible ingresar texto una vez complilada y ejecutada la herramienta, aunque esto particularmente no tenga ninguna funcionalidad asignada, salvo la que determinen los usuarios.
+
+Por último se encuentran las funciones referenciadas a los widgets y el main loop que permite ejecutar la clase principial  
 
