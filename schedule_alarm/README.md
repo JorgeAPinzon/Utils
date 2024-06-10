@@ -61,4 +61,4 @@ Notese que para trabajar con la herramienta es necesario cargarla e incluirla en
 
 ![pygubu_generate_panel](https://github.com/JorgeAPinzon/Utils/assets/159712640/f863bfea-a39a-4c4d-ab74-2260c34bb7fb)
 
-
+En ultima instancia se recomienda seguir la estructura del estilo ttk para evitar confusiones, si quiere generar código utilizando la pestaña de aplicación recuerde que deberá guardar el nombre de la interfaz (.ui) en el mismo directorio donde tiene alojado el proyecto o script de interfaz(PROJECT PATH) 
