@@ -62,3 +62,10 @@ Notese que para trabajar con la herramienta es necesario cargarla e incluirla en
 ![pygubu_generate_panel](https://github.com/JorgeAPinzon/Utils/assets/159712640/f863bfea-a39a-4c4d-ab74-2260c34bb7fb)
 
 En ultima instancia se recomienda seguir la estructura del estilo ttk para evitar confusiones, si quiere generar código utilizando la pestaña de aplicación recuerde que deberá guardar el nombre de la interfaz (.ui) en el mismo directorio donde tiene alojado el proyecto o script de interfaz(PROJECT PATH) 
+
+__reloj_off_gui.py__
+
+Este es el script principal donde se ejecutan todas las tareas descritas anteriormente, su organización es bastante sencilla, en primera instancia se define la clase y se desarrolla la ui desde el estilo definido por el usuario independientemente de la cantidad de widgets a los que les halla asignado la definición, después esta el apartado de widgets donde se encuentran: 
+
+- Label1: Es donde esta alojado el fondo de pantalla de la gui y como se ha determinado en anteriores proyectos, esta en el directorio raiz con el nombre __fondo_reloj_grafica.png__, fue asignado desde el panel de propiedades ("image" justo debajo de foreground)
+
