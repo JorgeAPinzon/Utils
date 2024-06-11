@@ -167,3 +167,40 @@ Ultimately, it is recommended to follow the ttk style structure to avoid confusi
 
 __reloj_off_gui.py__
 
+This is the main script where all the tasks described above are executed, its organization is quite simple, in first instance the class is defined and the ui is developed from the style defined by the user regardless of the number of widgets to which the definition is assigned, then there is the widgets section where they are located: 
+
+- Label1: This is where the gui wallpaper is hosted and as has been determined in previous projects, it is in the root directory with the name __fondo_reloj_grafica.png__, it was assigned from the properties panel in pygubu-designer ("image" just below foreground)
+- Label2: This widget has the task of showing the current time in 12H format, however in the code other operations are carried out in military format (24H from 00:00), however this does not take away from the convenience or functionality for programming the desired time
+- Label3: Shows the current date, this will be key when scheduling the shutdown
+- Button1: It is the off button, it displays or hides the elements to program the "shutdown" of the application and captures the date selected by the user to know if it corresponds to a valid entry. Every time the button is pressed the notification area is cleared (8 times per global counter1)
+- Button2: Programar is the widget that involves several of the elements defined for the application, since it confirms the time and format in entry1, the date and its conversion into calendar1, this of course to prevent it from being done before the current date to finally display the relevant events in the designated notification area (text1)
+- Entry1: Entry of the shutdown time in 24H format, the split tool is used to even ask if the shutdown day corresponds to the current date; This way it is possible to avoid assigning hours that have already passed
+- Text1: It is the notification area so it shows the relevant events entered. Due to the functionality of the widget, it is possible to enter text once the tool is compiled and executed, although this does not particularly have any assigned functionality, except that determined by the users.
+
+Finally, there are the functions referenced to the widgets and the main loop that allows calling the main class __InterfaceClockOffApp__. 
+
+- function update_clock(self):
+
+Purpose: Display the current time and date to facilitate shutdown scheduling
+Use: Sets the current time and date, together with the clock event, closes the application
+
+- run(self) function
+
+Purpose and use: main window execution loop
+
+- Buttonpress(self) function:
+
+Purpose: Display or hide the elements to schedule the shutdown of the application
+Usage: Press the Off button to display the shutdown scheduling interface and clear the notification area every n times
+
+- Buttonprogram(self) function:
+
+Purpose: Schedule alarms and notifications in the graphical interface
+Use: Select the desired date and time so that when you press the button and of course respecting the developed logic, the application closes autonomously
+
+- Focus_entry(self, event) function:
+
+Purpose: Track the user's focus on the widget and clean up the entry once the event has taken place
+Use: Reference the user how to enter the time, for example 14:17 (2:17 PM)
+
+
