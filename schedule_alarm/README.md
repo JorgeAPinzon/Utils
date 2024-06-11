@@ -57,7 +57,7 @@ Para crear el script utilice el menu de preferencias ubicado en editar, luego di
 ![pygubu](https://github.com/JorgeAPinzon/Utils/assets/159712640/a6e2ca23-8d8f-495e-9434-f3ddd807c262)
 
 
-Nótese que para trabajar con la herramienta es necesario cargarla e incluirla en el generate code (generar), cada vez que se utiliza el aplicativo puesto que aparecerá como elemento tanto de la clase como de import, para mas documentación sobre su uso utilice los recursos de los desarrolladores; gráficamente lo seleccionaria desde el panel de propiedades (siempre y cuando el widget lo permita, parte derecha de la pantalla)   
+Nótese que para trabajar con la herramienta es necesario cargarla e incluirla en el generate code (generar), cada vez que se utiliza el aplicativo puesto que aparecerá como elemento tanto de la clase como de import, para mas documentación sobre su uso consulte los recursos de los desarrolladores; gráficamente lo seleccionaria desde el panel de propiedades (siempre y cuando el widget lo permita, parte derecha de la pantalla)   
 
 ![pygubu_generate_panel](https://github.com/JorgeAPinzon/Utils/assets/159712640/f863bfea-a39a-4c4d-ab74-2260c34bb7fb)
 
@@ -100,3 +100,70 @@ Uso: Seleccionar la fecha y hora deseada para que al presionar el botón y por s
 
 Propósito: Realizar seguimiento al focus del usuario en el widget y limpiar la entrada una vez realizado el evento  
 Uso: Referenciar al usuario la manera en que debe ingresar la hora por ejemplo 14:17 (2:17 PM)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## English Version ##
+
+In this directory you can find a fairly simple but versatile utility, it is essentially a current clock and date with two widgets (buttons), which are responsible for both showing/hiding the elements, and for scheduling the closing of the application. The user enters the shutdown date/time that is translated into the notifications (text1), and displayed on the screen before finishing.
+
+Following tools were used for the project (pip install + package or pip install + package == 'version')
+
+- Spyder IDE 5.4.2 (Python 3.11.2 32bits x86), Linux
+- Tkinter
+- Time and datetime
+- Pip 24.0
+- Pygubu 0.34 and Pygubu-designer 0.38
+
+__style_test2_custom.py__
+
+As its name indicates, it is a style script generated from the pygubu-designer tool and comes by default with the comments and the necessary structure to work with ttk style for primary, secondary, warning... buttons.
+
+```
+import tkinter as tk
+import tkinter.ttk as ttk
+
+
+def setup_ttk_styles(master=None):
+    my_font = ("console", 12, "bold")
+    
+    style = ttk.Style(master)
+    
+    style.configure("primary.TButton",
+                    font=my_font,
+                    background="#4582EC",
+                    foreground="white")
+    style.configure("secondary.TButton",
+                    font=my_font,
+                    background="#ADB5BD", 
+                    foreground="white")
+    style.configure("warning.TButton",
+                    font=my_font,
+                    background="#F0AD4E", 
+                    foreground="white")    
+    style.configure("danger.TButton",
+                    font=my_font,
+                    background="#D9534F", 
+                    foreground="white")
+    style.configure("MyStyle.TLabel",
+                    font=my_font,
+                    background="#e4e0d3", 
+                    foreground="#444648")
+    style.configure("Entrada.TLabel",
+                    font=my_font, 
+                    background="#aca6a3", 
+                    foreground="black")
+```
+
+To create the script use the preferences menu located in edit, then go to the tab that says ttk styles and press create. As a recommendation, use the same directory as the application since this allows you to organize styles for each project you have and will avoid compilation and/or execution errors. Likewise, you can search for the ttk style manually, write the directory as appropriate or delete it.
+
+![pygubu](https://github.com/JorgeAPinzon/Utils/assets/159712640/a6e2ca23-8d8f-495e-9434-f3ddd807c262)
+
+Note that to work with the tool it is necessary to load it and include it in the generate code, every time the application is used since it will appear as an element of both the class and import, for more documentation on its use consult the developers' resources; graphically you would select it from the properties panel (as long as the widget allows it, right side of the screen). 
+
+![pygubu_generate_panel](https://github.com/JorgeAPinzon/Utils/assets/159712640/f863bfea-a39a-4c4d-ab74-2260c34bb7fb)
+
+Ultimately, it is recommended to follow the ttk style structure to avoid confusion. If you want to generate code using the application tab, remember that you must save the interface name (.ui) in the same directory where the project or interface script is hosted. (PROJECT PATH)
+
+__reloj_off_gui.py__
+
