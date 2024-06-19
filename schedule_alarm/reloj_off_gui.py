@@ -208,7 +208,17 @@ class InterfazRelojOffApp:
             
             if selected_date_obj >= fecha_actual:
                 
-                hora_minutos = self.entry1.get().split(":")
+                #hora_minutos = self.entry1.get().split(":")
+                try:
+                    
+                    hora_minutos = [int(x) for x in self.entry1.get().split(":")]
+                    
+                except ValueError:
+                    
+                        print("Error: Valor no numérico encontrado")
+                        self.text1.insert("1.0", "Error: Valor no numérico encontrado\n")
+                        
+                        return
                 
             #minutos = self.tiempo_actual.split(":")[0] # [0] para horas [2] segundos usar en print 
                 
