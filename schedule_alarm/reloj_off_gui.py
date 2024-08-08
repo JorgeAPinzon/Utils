@@ -237,19 +237,19 @@ class InterfazRelojOffApp:
                             self.text1.insert("1.0", "Verifique la hora ingresada\n")
                        
                         else:
-                            
-                            # pseudo - animacion del boton programar
-                            
-                            self.style = ttk.Style()
-                            self.style.configure('primary.TButton', foreground='green', background='light green')
-                            self.button2.config(style='primary.TButton', text = 'Programado')
+                            if self.hora >= int(horareal):
+                                # pseudo - animacion del boton programar
                                 
-                            print(f"Hora Programada: {self.hora}:{self.minutos}")
-                            self.text1.insert("1.0", f"Hora Programada: {self.hora}:{self.minutos}\n")
-                            print (f"Fecha Programada: {selected_date_obj}")
-                            self.text1.insert("1.0", f"Fecha Programada: {selected_date_obj}\n")
-                            #print (f"Minuto real 24H: {minutoreal}")
-                            self.contador +=1
+                                self.style = ttk.Style()
+                                self.style.configure('primary.TButton', foreground='green', background='light green')
+                                self.button2.config(style='primary.TButton', text = 'Programado')
+                                    
+                                print(f"Hora Programada: {self.hora}:{self.minutos}")
+                                self.text1.insert("1.0", f"Hora Programada: {self.hora}:{self.minutos}\n")
+                                print (f"Fecha Programada: {selected_date_obj}")
+                                self.text1.insert("1.0", f"Fecha Programada: {selected_date_obj}\n")
+                                #print (f"Minuto real 24H: {minutoreal}")
+                                self.contador +=1
             
                     else:
                         
