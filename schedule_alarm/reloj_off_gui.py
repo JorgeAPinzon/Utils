@@ -237,7 +237,7 @@ class InterfazRelojOffApp:
                             self.text1.insert("1.0", "Verifique la hora ingresada\n")
                        
                         else:
-                            if self.hora >= int(horareal):
+                            if self.hora >= int(horareal) or selected_date_obj > fecha_actual:
                                 # pseudo - animacion del boton programar
                                 
                                 self.style = ttk.Style()
