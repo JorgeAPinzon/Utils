@@ -130,9 +130,16 @@ class InterfazRelojOffApp:
         
         # Temporizador de apagado
         
-        if self.hora == int(horareal) and self.minutos == int(minutoreal):
+        selected_date = self.calendarframe1.selection
+        fecha_actual2 = datetime.date.today()
+        
+        if selected_date is not None:
             
-            self.mainwindow.destroy()
+            selected_date_obj = datetime.date(selected_date.year, selected_date.month, selected_date.day)
+        
+            if self.hora == int(horareal) and self.minutos == int(minutoreal) and selected_date_obj == fecha_actual2:
+            
+                self.mainwindow.destroy()
         
         self.mainwindow.after(1000, self.actualizar_reloj)
         
